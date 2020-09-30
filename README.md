@@ -64,4 +64,4 @@ Run:
 	./ASMstantua [num]
 	./ASMstantua_rev [num]
 ```
-[sas]:https://imgur.com/a/I0KmLkw
+[sas]:https://i.imgur.com/XzbiwKP.png
