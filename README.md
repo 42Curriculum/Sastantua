@@ -4,9 +4,13 @@
 ## Our battle will be legendary!
 
 After a year spent training amongst the best,
+
 I trace my steps back to the source...
+
 Here, an old enemy will be laid to rest,
+
 Once fate has taken its course
+
 
 It all ends where it began! En garde, Sastantua!
 
@@ -45,14 +49,11 @@ Improvment!!! :)
 
 I may even do a color gradient Sastantua to celebrate >.>
 
-	```
 	Compile with:
 		Make [Cstantua , Cstantua_rev]
 	Run:
 		./ASMstantua [num]
 		./ASMstantua_rev [num]
-	```
-
 
 ### ASMstantua :
 
