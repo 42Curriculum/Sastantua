@@ -1,53 +1,72 @@
 #include <stdio.h>
 #include <unistd.h>
 
-void	print(int levels, int size)
+void print(int amount, char c)
 {
-	int i;
-	int current_size;
-
-	i = 1;
-	current_size = 1;
-	while(i <= levels)
+	while(amount > 0)
 	{
-		int n = 0;
-		while (n++ < levels - i)
-			write(1," ",1);
-		int j = 0;
-		while (++j <= current_size)
-			write(1,"*", 1);
-		current_size += 2;
-		write(1,"\n",1);
-		// (i == 1) ? (write(1,"\n", 1)) : ((write(1,"*\n", 2)));
-		i++;
+		write(1, &c, 1);
+		amount--;
 	}
 }
-int		get_size(int levels)
+
+void	build(int height, int size, int len)
 {
 	int i;
-	int total;
+	int offset;
+	int current_level;
+
+	offset = 1;
+	current_level = 1;
+	while(current_level <= size)
+	{
+		i = current_level + 2;
+		while(i > 0)
+		{
+			print(height, ' ');
+			write(1, "/",1);
+			print(offset, '*');
+			write(1, "\\",1);
+			write(1, "\n",1);
+			i--;
+			height--;
+			offset += 2;
+		}
+		current_level += 1;
+		height -= (current_level / 2) + (current_level % 2) + 1;
+		offset += ((current_level / 2) + (current_level % 2) + 1) * 2;
+	}
+}
+
+void		get_size(int input, int *base_len, int *height)
+{
+	int i;
 
 	i = 1;
-	total = 0;
-	while(i <= levels)
+	while(i <= input)
 	{
-		total += (i + 2);
+		*height += (i + 2) + 1;
+		*base_len +=  ((i - 1) / 2) + ((i - 1) % 2);
 		i++;
 	}
-	return total;
+	*height -= 1;
+	*base_len += (*height);
+	printf("Amount %d char %d\n", *base_len, *height);
 }
 
 void	sastantua(int size)
 {
-	int levels;
+	int height;
+	int base_len;
 
-	levels = get_size(size);
-	// printf("Levels = %d\n", levels);
-	print(levels, size);
+	get_size(size, &height, &base_len);
+	build(height, size, base_len);
+	// printf("Levels = %d\n", base_len);
+	// prints(levels, size);
 }
 
 int		main(int argc, char **argv)
 {
-	sastantua(2);
+	sastantua(4);
 	return 0;
 }

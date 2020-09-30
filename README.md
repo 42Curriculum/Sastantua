@@ -23,6 +23,27 @@ It all ends where it began! En garde, Sastantua!
 ### Cstantua :
 
 	Just the regular Sastantua in C, nothing impressive.
+	Coding it to norme for the complete piscine experience.
+
+	Norme:
+	```
+	5 functions per file
+	25 lines per function
+	Not stdlib functions allowed except those in the pdf (unistd's write())
+	```
+
+	Additionally, the pdf specifies that there should be only one file. Meaning 100 lines of code.
+
+	Here's what I have so far:
+
+	![alt text][sas]
+
+	I only need to make the door and door knob, but this VM is painfully slow...
+	All in all it was easier than expected. I have a better understanding of patterns than I did then.
+	I remember trying to find the length of the base, in what seemed like an impossible task. But the solution came to me after a literal 2 minutes of looking at the program output.
+	Improvment!!! :)
+
+	I may even do a color gradient Sastantua to celebrate >.>
 
 	```
 	Compile with:
@@ -43,3 +64,5 @@ It all ends where it began! En garde, Sastantua!
 		./ASMstantua [num]
 		./ASMstantua_rev [num]
 	```
+
+[sas]:https://imgur.com/a/I0KmLkw
