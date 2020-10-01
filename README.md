@@ -3,32 +3,33 @@
 
 ## Our battle will be legendary!
 
-After a year spent training amongst the best,
+*After a year spent training amongst the best,*
 
-I trace my steps back to the source...
+*I trace my steps back to the source...*
 
-Here, an old enemy will be laid to rest,
+*Here, an old enemy will be laid to rest,*
 
-Once fate has taken its course
+*Once fate has taken its course*
 
 
-It all ends where it began! En garde, Sastantua!
+**It all ends where it began! En garde, Sastantua!**
 
 ---
 ### The two pyramids:
 
 Unlike most people during the piscine, my attempt to code Sastantua was very short.
-After about an hour thinking about the problem, me and my partner decided that it would be easier to reverse engineer it from the provided executable.
+After about an hour spent thinking about the problem, me and my partner decided that it would be easier to reverse engineer it from the provided executable.
 
-It goes without saying that it was not actually easier and that we did not succeed. All we were able to do was recover some of the comments and waste the remainder of the day looking through assembly guides...
+**It goes without saying that it was not actually easier**. All we were able to do was recover some of the comments and waste the remainder of the day looking through assembly guides...
 
-And thus this is my first (and last hopefully) true attempt at coding Sastantua.
+And thus this is my first (and last) attempt at coding Sastantua.
 I will also attempt to reverse engineer it, so that I may become the one true master of the Pyramid
 
-### Cstantua :
+### Cstantua : Just the regular Sastantua in C, nothing impressive.
 
-Just the regular Sastantua in C, nothing impressive.
-Coding it to norme for the complete piscine experience.
+![alt text][sas]
+
+*Coding it to norme for the complete piscine experience.*
 
 Norme:
 ```
@@ -36,33 +37,23 @@ Norme:
 25 lines per function
 Not stdlib functions allowed except those in the pdf (unistd's write())	
 
-Additionally, the pdf specifies that there should be only one file. Meaning 100 lines of code.
+Additionally, the pdf specifies that there should be only one file
 ```
-Here's what I have so far:
 
-![alt text][sas]
-
-I only need to make the door and door knob, but this VM is painfully slow...
 All in all it was easier than expected. I have a better understanding of patterns than I did then.
+
 I remember trying to find the length of the base, in what seemed like an impossible task. But the solution came to me after a literal 2 minutes of looking at the program output.
-Improvment!!! :)
+
+Improvment! :)
 
 I may even do a color gradient Sastantua to celebrate >.>
 
 	Compile with:
-		Make [Cstantua , Cstantua_rev]
+		Make cstantua
 	Run:
-		./ASMstantua [num]
-		./ASMstantua_rev [num]
+		./cstantua [num]
+		[num] >= 0 for regular sastua, [num] < 0 for reversed
 
-### ASMstantua :
+### ASMstantua : The true challenge begins...
 
-The true challenge begins...
-```
-Compile with:
-	Make [ASMstantua , ASMstantua_rev]
-Run:
-	./ASMstantua [num]
-	./ASMstantua_rev [num]
-```
-[sas]:https://i.imgur.com/XzbiwKP.png
+[sas]:https://i.imgur.com/woZvjN9.png
